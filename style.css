@@ -1,0 +1,112 @@
+/* Start variables */
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* Neutral */
+
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+/* End variables */
+
+/* Start Global Rules */
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--Dark-cyan);
+    overflow: hidden;
+}
+
+/* End Global Rules */
+
+/* Start Profile */
+
+
+main .top {
+    position: absolute;
+    top: -680px;
+    left: -280px;
+}
+
+main .bottom {
+    position: absolute;
+    right: -280px;
+    bottom: -680px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99;
+}
+
+.container .imgs {
+    position: relative;
+}
+
+.container .imgs .logo {
+    max-width: 100%;
+}
+
+.container .imgs .victor {
+    position: absolute;
+    left: 50%;
+    bottom: -48px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px white;
+}
+
+.container .content {
+    margin: 70px 0 20px;
+    border-bottom: 1px solid var(--Dark-gray);
+}
+
+.container .content h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content h1 span {
+    display: block;
+    margin-left: 10px;
+    font-weight: 400;
+    color: var(--Dark-gray);
+}
+
+.container .content p {
+    font-size: 18px;
+    color: var(--Dark-gray);
+}
+
+.container .box {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.container .box div {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.container .box div span {
+    display: block;
+    margin-top: 5px;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/* End Profile */
